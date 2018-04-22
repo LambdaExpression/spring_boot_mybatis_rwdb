@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+
+        <!ELEMENT configuration (methods?,paths?)>
+        <!ELEMENT methods (method*)>
+        <!ATTLIST methods >
+        <!ELEMENT method EMPTY>
+        <!ATTLIST method
+                value CDATA #IMPLIED
+                type CDATA #IMPLIED
+                >
+        <!ELEMENT paths (path*)>
+        <!ATTLIST paths >
+        <!ELEMENT path EMPTY>
+        <!ATTLIST path
+                value CDATA #IMPLIED
+                >

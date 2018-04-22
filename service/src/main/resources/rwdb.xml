@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration PUBLIC "-//org.tcat//DTD Config 3.0//EN"
+        "/home/lin/Documents/myself/bandwagon/myself/spring_boot_rwdb/service/src/main/resources/rwdb.dtd">
+
+<configuration>
+    <methods>
+        <method value="get" type="startsWith"/>
+    </methods>
+    <paths>
+        <path value="org.tcat.rwdb"/>
+    </paths>
+</configuration>

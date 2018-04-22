@@ -1,0 +1,39 @@
+server:
+    port: 10060
+
+
+#spring:
+#    datasource:
+#        url: jdbc:sqlserver://127.0.0.1:1433;database=TEST1;integratedSecurity=false;autoReconnect=true;
+#        username: sa
+#        password: ABCabc123
+#        driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDataSource
+
+#spring:
+#    datasource:
+#        write:
+#            url: jdbc:mysql://39.108.119.41:7779/dev?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull
+#            username: dev
+#            password: r1NEnedLzRshD^hJ
+#            driver-class-name: com.mysql.jdbc.Driver
+#        read:
+#            -   url: jdbc:mysql://39.108.119.41:7779/test?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull
+#                username: dev
+#                password: r1NEnedLzRshD^hJ
+#                driver-class-name: com.mysql.jdbc.Driver
+
+
+spring:
+    datasource:
+        write:
+            url: jdbc:sqlserver://127.0.0.1:1433;database=TEST1;integratedSecurity=false;autoReconnect=true;
+            username: sa
+            password: ABCabc123
+        read:
+            -   url: jdbc:sqlserver://127.0.0.1:1433;database=TEST2;integratedSecurity=false;autoReconnect=true;
+                username: sa
+                password: ABCabc123
+
+logging:
+    level:
+        root : debug
